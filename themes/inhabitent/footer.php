@@ -15,10 +15,12 @@
 						<h3>Contact Info</h3>
 						<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
 						<p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:778-456-7891">778-456-7891</a></p>
-						<p><i class="fa fa-facebook-official" aria-hidden="true" ></i>
-							<i class="fa fa-twitter-square" aria-hidden="true"></i>
-							<i class="fa fa-google-plus-square" aria-hidden="true"></i>
-						</p>
+							<div class="footer-social">
+								<p><i class="fa fa-facebook-official" aria-hidden="true" ></i>
+									<i class="fa fa-twitter-square" aria-hidden="true"></i>
+									<i class="fa fa-google-plus-square" aria-hidden="true"></i>	
+								</p>
+							</div>	
 					</div>
 				
 				<div class="business">
