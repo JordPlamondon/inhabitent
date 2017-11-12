@@ -10,6 +10,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  p span {
+    font-weight: bold;
+  }
   h3 {
     color: #d99054;
   }
@@ -25,7 +28,7 @@
     text-align: center;
     width: 100%;
     text-transform: uppercase;
-    // margin-bottom: 0;
+    padding-top: 25px;
   }
   .contact {
     padding-left: 4rem;
@@ -33,6 +36,10 @@
       text-decoration: none;
       color: white;
       padding-left: 0.5rem;
+    }
+    .contact-icons i {
+      font-size: 1.25rem;
+      margin-right: .3rem;
     }
     .footer-social i {
       font-size: 1.25rem;

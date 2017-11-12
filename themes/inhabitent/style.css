@@ -225,6 +225,34 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'merriweather';
+  src: url("../fonts/merriweather-bold-webfont.eot");
+  src: url("../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../fonts/merriweather-bold-webfont.woff") format("woff"), url("../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../fonts/merriweather-light-webfont.eot");
+  src: url("../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../fonts/merriweather-light-webfont.woff") format("woff"), url("../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novacento';
+  src: url("../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../fonts/mnovecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../fonts/novecentosanswide-normal-webfontsvg#mnovecentosanswide") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novacento';
+  src: url("../fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../fonts/novecentosanswide-demibold-webfont.svg#novecentosanswide-demibold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -299,6 +327,8 @@ big {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+  .site-footer p span {
+    font-weight: bold; }
   .site-footer h3 {
     color: #d99054; }
   .site-footer .footer-logo {
@@ -315,13 +345,17 @@ big {
   .site-footer .site-info {
     text-align: center;
     width: 100%;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-top: 25px; }
   .site-footer .contact {
     padding-left: 4rem; }
     .site-footer .contact a {
       text-decoration: none;
       color: white;
       padding-left: 0.5rem; }
+    .site-footer .contact .contact-icons i {
+      font-size: 1.25rem;
+      margin-right: .3rem; }
     .site-footer .contact .footer-social i {
       font-size: 1.25rem;
       margin-right: .5rem; }
@@ -344,6 +378,36 @@ big {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.shop-product-container h2 {
+  text-align: center; }
+
+.shop-product-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none; }
+
+.shop-product-container li {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  text-align: center;
+  padding: 1rem .5rem;
+  width: 260px; }
+
+.shop-product-container img {
+  width: 70px; }
+
+.shop-product-container .gb {
+  color: white;
+  text-decoration: none;
+  font-size: .9rem;
+  padding: .75rem 1.5rem;
+  text-transform: uppercase;
+  background-color: #248a83; }
 
 /*--------------------------------------------------------------
 # Elements
