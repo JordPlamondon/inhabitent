@@ -130,3 +130,32 @@ a {
 		width: 50%;
 	}
 }
+
+// .main-navigation {
+// 	display: flex;
+// 	justify-content: flex-end;
+// }
+site-header {
+	text-transform: uppercase;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.site-branding {
+		height: 33px;
+		width: 50px;
+		background-image: url('assets/project-04/images/logos/inhabitent-logo-tent.svg');
+		background-size: cover;
+		a {
+			display: block;
+			height: 33px;
+			width: 50px;
+		}
+	}
+}

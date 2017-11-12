@@ -1,9 +1,9 @@
 /*!
-Theme Name: Inhabitent Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Jordan Plamondon
-Author URI: https://github.com/JordPlamondon
-Description: Project 4 Inhabitent Theme with WordPress
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -492,6 +492,32 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+site-header {
+  text-transform: uppercase;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 1; }
+  site-header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  site-header .site-branding {
+    height: 33px;
+    width: 50px;
+    background-image: url("assets/project-04/images/logos/inhabitent-logo-tent.svg");
+    background-size: cover; }
+    site-header .site-branding a {
+      display: block;
+      height: 33px;
+      width: 50px; }
 
 /*--------------------------------------------------------------
 # Accessibility

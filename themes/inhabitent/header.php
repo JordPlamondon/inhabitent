@@ -21,15 +21,29 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				</div><!-- .site-branding -->
-
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+				<div class="container">
+					<div class="site-branding">
+						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+					</div><!-- .site-branding -->
+				
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<!-- search icon -->
+						<i class="fa fa-search" aria-hidden="true"></i>
+				
+					</nav><!-- #site-navigation -->
+				</div>	
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
+
+<!-- save for later -->
+			<!-- <a href="http://localhost:3000/inhabitentproject4/"><img 
+					src="assets/project-04/images/logos/inhabitent-logo-tent-white.svg"/></a> -->
+
+
+
+
+					
