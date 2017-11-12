@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent 
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: Jordan Plamondon
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: Project 4 WordPress Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -55,6 +55,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "normalize";
 @import "fonts";
 @import "typography";
+@import "footer";
+@import "front-page";
 @import "elements";
 @import "forms";
 @import "navigation";

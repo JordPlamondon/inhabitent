@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent 
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: Jordan Plamondon
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: Project 4 WordPress Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -283,6 +283,53 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.site-footer {
+  width: 100%;
+  height: 355px;
+  background: url("http://localhost:8888/inhabitentproject4/wp-content/uploads/2017/11/dark-wood.png") repeat;
+  padding-top: 4rem;
+  color: white;
+  line-height: 1.4; }
+  .site-footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .site-footer .footer-logo {
+    height: 50px;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .site-footer .site-info {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding-top: 0;
+  background: url("http://localhost:8888/inhabitentproject4/wp-content/uploads/2017/11/home-hero.jpg");
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -512,7 +559,7 @@ site-header {
   site-header .site-branding {
     height: 33px;
     width: 50px;
-    background-image: url("assets/project-04/images/logos/inhabitent-logo-tent.svg");
+    background-image: url("/assets/project-04/images/logos/inhabitent-logo-tent.svg");
     background-size: cover; }
     site-header .site-branding a {
       display: block;
