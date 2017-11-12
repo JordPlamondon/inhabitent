@@ -135,13 +135,24 @@ a {
 // 	display: flex;
 // 	justify-content: flex-end;
 // }
-site-header {
+.main-navigation {
+	display: flex;
+	justify-content: flex-end;
+	a {
+		margin: 1rem;
+	}
+	.fa {
+		padding: 17px 60px;
+		padding-left: 10px;
+	}
+}
+.site-header {
 	text-transform: uppercase;
+	-webkit-text-fill-color: white;
 	height: 50px;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	z-index: 1;
-
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -150,12 +161,7 @@ site-header {
 	.site-branding {
 		height: 33px;
 		width: 50px;
-		background-image: url('/assets/project-04/images/logos/inhabitent-logo-tent.svg');
-		background-size: cover;
-		a {
-			display: block;
-			height: 33px;
-			width: 50px;
-		}
+		margin-left: 60px;
+		// background-image: url('/assets/project-04/images/logos/inhabitent-logo-tent.svg');
 	}
 }

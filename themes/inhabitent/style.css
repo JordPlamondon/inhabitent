@@ -321,7 +321,8 @@ big {
   width: 100%;
   height: 100vh;
   padding-top: 0;
-  background: url("http://localhost:8888/inhabitentproject4/wp-content/uploads/2017/11/home-hero.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("http://localhost:8888/inhabitentproject4/wp-content/uploads/2017/11/home-hero.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://localhost:8888/inhabitentproject4/wp-content/uploads/2017/11/home-hero.jpg");
   background-size: cover;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -540,13 +541,27 @@ a {
   text-align: right;
   width: 50%; }
 
-site-header {
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .main-navigation a {
+    margin: 1rem; }
+  .main-navigation .fa {
+    padding: 17px 60px;
+    padding-left: 10px; }
+
+.site-header {
   text-transform: uppercase;
+  -webkit-text-fill-color: white;
   height: 50px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 1; }
-  site-header .container {
+  .site-header .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -556,15 +571,10 @@ site-header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  site-header .site-branding {
+  .site-header .site-branding {
     height: 33px;
     width: 50px;
-    background-image: url("/assets/project-04/images/logos/inhabitent-logo-tent.svg");
-    background-size: cover; }
-    site-header .site-branding a {
-      display: block;
-      height: 33px;
-      width: 50px; }
+    margin-left: 60px; }
 
 /*--------------------------------------------------------------
 # Accessibility
