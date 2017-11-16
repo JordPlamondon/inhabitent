@@ -4,28 +4,29 @@
 
 /* Front page */
 
-
-// .widget-area {
-//   display: flex;
-// }
-
-  
-//   .widget-area {
-//   display: flex;
-
-//   }  
-// }
-// .site-content {
-// }
-
-
-// .journal-page {
-//   display: flex;
-//   flex-direction: row;
-// }
 .blog #content {
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 auto;
   height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  #primary {
+    flex: 1 1 70%;
+    width: 70%;
+  }
+  #secondary {
+    flex: 1 1 30%;
+    width: 30%;
+    padding: 50px 50px;
+  }
+}
+.widget-area {
+  flex-wrap: wrap;
+  border: 1px solid #e1e1e1;
+}
+.site-main {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 60px 60px;
 }

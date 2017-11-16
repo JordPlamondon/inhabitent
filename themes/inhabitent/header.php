@@ -27,8 +27,10 @@
 					</div><!-- .site-branding -->
 					
 					<nav id="site-navigation" class="main-navigation" role="navigation">
+					<div class="white-tent">	
 					<a href="http://localhost:3000/inhabitentproject4/">
 					<img src="<?php echo get_template_directory_uri() . '/assets/project-04/images/logos/inhabitent-logo-tent-white.svg'; ?>" alt="Inhabitent Tent Logo" /></a>
+					</div>
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

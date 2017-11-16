@@ -133,14 +133,16 @@ a {
 
 .main-navigation {
 	display: flex;
-	// justify-content: flex-end;
-	// position: fixed;
+	justify-content: space-between;
 	a {
 		margin: 0.8rem;
 	}
 	.fa {
 		padding: 15px 60px;
 		padding-left: 10px;
+	}
+	.white-tent {
+		width: 5rem;
 	}
 }
 .site-header {

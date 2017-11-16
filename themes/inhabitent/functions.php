@@ -88,6 +88,7 @@ function red_starter_scripts() {
 	// if font awesome is a css link
 	wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
 	
+	wp_enqueue_script( 'jquery');
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	// if font awesome is a javascript link
