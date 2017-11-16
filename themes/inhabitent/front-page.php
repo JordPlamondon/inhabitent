@@ -14,47 +14,37 @@ get_header(); ?>
 			<section class="hero">
 				<img src="<?php echo get_template_directory_uri() . '/assets/project-04/images/logos/inhabitent-logo-full.svg'; ?>" alt="Inhabitent Logo" />
 			</section>
-			<section class="shop-product-container">
-				<h2>Shop Stuff</h2>
-				<ul>
-					<li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/project-04/images/product-type-icons/do.svg'; ?>" alt="Do Icon" />
-						<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.	
-						</p>
-						<p>
-							<a class="gb" href="linktopage">Do Stuff</a>
-						</p>		
-					</li>	
-					<li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/project-04/images/product-type-icons/eat.svg'; ?>" alt="Eat Icon" />
-						<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.	
-						</p>
-						<p>
-							<a class="gb" href="linktopage">Eat Stuff</a>
-						</p>		
-					</li>	
-					<li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/project-04/images/product-type-icons/sleep.svg'; ?>" alt="Sleep Icon" />
-						<p>Get a good night's rest in the wild in a home away from home that travels well.	
-						</p>
-						<p>
-							<a class="gb" href="linktopage">Sleep Stuff</a>
-						</p>		
-					</li>
-					<li>
-					<img src="<?php echo get_template_directory_uri() . '/assets/project-04/images/product-type-icons/wear.svg'; ?>" alt="Wear Icon" />
-						<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.	
-						</p>
-						<p>
-							<a class="gb" href="linktopage">Wear Stuff</a>
-						</p>		
-					</li>		
-					
-				
-				
-			
-			</section>
-						
+
+		<section class="product-info container">
+            <h2>Shop Stuff</h2>
+            <?php
+               $terms = get_terms( array(
+                   'taxonomy' => 'product-type',
+                   'hide_empty' => 0,
+							 ) );
+							 
+							 d($terms);
+
+               if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+            ?>
+               <div class="product-type-blocks">
+
+                  <?php foreach ( $terms as $term ) : ?>
+
+                     <div class="product-type-block-wrapper">
+                        <img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
+                        <p><?php echo $term->description; ?></p>
+                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
+                     </div>
+
+                  <?php endforeach; ?>
+
+               </div>
+               
+            <?php endif; ?>
+         </section>
+
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -77,7 +67,27 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
+		<?php endif; ?>	
+
+		<ul>
+			<?php
+    	$args = array( 'posts_per_page' => '3');
+    	$product_posts = get_posts( $args );?>
+    	<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+			<li>
+			<div class="thumbnail">	
+				<?php the_post_thumbnail( 'full' ); ?>
+			</div>
+			<div class="journal-text">
+				<div class="date-comments">
+					<?php the_date(); ?> / <?php comments_number(); ?> 
+				</div>				
+			<h2><?php the_title(); ?></h2>
+			<a href="<?php echo get_the_permalink();?>">Read More</a>
+			</div>
+			</li>	
+    	<?php endforeach; wp_reset_postdata(); ?>
+		</ul>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

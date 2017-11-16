@@ -31,6 +31,43 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+.thumbnail {
+	background-color: #e1e1e1;
+}
+	.home .site-main ul {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding-left: 5rem;
+	padding-top: 5rem;
+	a {
+		color: black;
+		border: 1px solid black;
+		padding: 10px 25px;
+		text-decoration: none;
+	}
+	li {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		margin-right: 40px;
+		border: 1px solid #e1e1e1;
+		.journal-text {
+			padding: 10px;
+			padding-bottom: 20px;
+			.date-comments {
+				font-size: 0.75rem;
+			}
+		}
+		h2 {
+			color: #248A83;
+			list-style-position: none;
+		}
+	}
+	img {
+		height: 98%;
+	}
+}
 
 /* Asides */
 

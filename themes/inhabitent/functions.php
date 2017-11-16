@@ -83,7 +83,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function red_starter_scripts() {
-	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
 	
 	// if font awesome is a css link
 	wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );

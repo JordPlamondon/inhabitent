@@ -3,3 +3,29 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+
+// .widget-area {
+//   display: flex;
+// }
+
+  
+//   .widget-area {
+//   display: flex;
+
+//   }  
+// }
+// .site-content {
+// }
+
+
+// .journal-page {
+//   display: flex;
+//   flex-direction: row;
+// }
+.blog #content {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  height: 100%;
+}
