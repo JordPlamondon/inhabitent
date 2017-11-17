@@ -391,8 +391,42 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.shop-product-container h2 {
-  text-align: center; }
+.product-info-container h2 {
+  text-align: center;
+  padding-top: 40px; }
+
+.product-info-container .product-type-blocks {
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .product-info-container .product-type-blocks .product-type-block-wrapper {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    text-align: center;
+    padding: 1rem 1rem;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    margin: 10px; }
+
+.product-info-container img {
+  width: 70px; }
+
+.product-info-container .btn {
+  color: white;
+  text-decoration: none;
+  font-size: .9rem;
+  padding: .75rem 1.5rem;
+  text-transform: uppercase;
+  background-color: #248a83; }
 
 .home #secondary {
   display: none; }
@@ -617,18 +651,23 @@ a {
   .main-navigation a {
     margin: 0.8rem; }
   .main-navigation .fa {
-    padding: 15px 60px;
+    padding: 25px 60px;
     padding-left: 10px; }
   .main-navigation .white-tent {
-    width: 5rem; }
+    width: 4.5rem; }
+
+.menu-main-menu-container {
+  padding-top: 10px;
+  margin-left: 37rem; }
 
 .site-header {
   text-transform: uppercase;
-  -webkit-text-fill-color: white;
-  height: 50px;
+  -webkit-text-fill-color: #248a83;
+  background-color: rgba(255, 255, 255, 0.85);
   width: 100%;
-  position: absolute;
-  z-index: 3; }
+  position: fixed;
+  z-index: 3;
+  border: 1px solid #e1e1e1; }
   .site-header .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -638,11 +677,14 @@ a {
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin: -8px; }
   .site-header .site-branding {
     height: 33px;
-    width: 50px;
-    margin-left: 80px; }
+    width: 50px; }
+
+.home .entry-title a {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -859,6 +901,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*Journal Page */
 .blog #content {
   margin: 0 auto;
   height: 100%;
@@ -876,25 +919,56 @@ object {
         -ms-flex: 1 1 70%;
             flex: 1 1 70%;
     width: 70%; }
+    .blog #content #primary img {
+      width: 100%; }
+    .blog #content #primary h2 {
+      background-color: #248a83;
+      font-size: 2.1rem;
+      padding: .75rem 1.5rem;
+      position: absolute;
+      margin-top: 2.25rem;
+      max-width: 75%;
+      top: 10px; }
+      .blog #content #primary h2 a {
+        color: #fff;
+        text-decoration: none; }
+  .blog #content .site-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    padding: 60px 60px;
+    margin-top: 40px; }
+  .blog #content article {
+    position: relative; }
+  .blog #content .entry-meta {
+    background-color: #248a83;
+    color: #fff;
+    padding: .2rem 1.5rem;
+    position: absolute;
+    right: 0px;
+    bottom: 11rem; }
   .blog #content #secondary {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 30%;
             flex: 1 1 30%;
     width: 30%;
-    padding: 50px 50px; }
+    padding: 50px 50px;
+    margin-top: 40px; }
 
 .widget-area {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border: 1px solid #e1e1e1; }
+  .widget-area a {
+    color: #248a83; }
+  .widget-area .contact-meta i {
+    margin-right: 15px; }
 
-.site-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: auto;
-  padding: 60px 60px; }
+/* Shop Page */
+.archive #secondary {
+  display: none; }

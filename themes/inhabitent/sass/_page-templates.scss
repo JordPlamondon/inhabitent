@@ -4,6 +4,8 @@
 
 /* Front page */
 
+/*Journal Page */
+
 .blog #content {
   margin: 0 auto;
   height: 100%;
@@ -13,20 +15,62 @@
   #primary {
     flex: 1 1 70%;
     width: 70%;
+    img {
+      width: 100%;
+    }
+    h2 {
+      background-color: #248a83;
+      font-size: 2.1rem;
+      padding: .75rem 1.5rem;
+      position: absolute;
+      margin-top: 2.25rem;
+      max-width: 75%;
+      top: 10px;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  .site-main {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 60px 60px;
+    margin-top: 40px;
+  }
+  article {
+    position: relative;
+  }
+  .entry-meta {
+    background-color: #248a83;
+    color: #fff;
+    padding: .2rem 1.5rem;
+    position: absolute;
+    right: 0px;
+    bottom: 11rem;
   }
   #secondary {
     flex: 1 1 30%;
     width: 30%;
     padding: 50px 50px;
+    margin-top: 40px;
   }
 }
+
 .widget-area {
   flex-wrap: wrap;
   border: 1px solid #e1e1e1;
+  a {
+    color: #248a83;
+  }
+  .contact-meta i {
+    margin-right: 15px;
+  }
 }
-.site-main {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  padding: 60px 60px;
+
+/* Shop Page */
+
+.archive #secondary {
+  display: none;
 }

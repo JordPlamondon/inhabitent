@@ -138,29 +138,37 @@ a {
 		margin: 0.8rem;
 	}
 	.fa {
-		padding: 15px 60px;
+		padding: 25px 60px;
 		padding-left: 10px;
 	}
 	.white-tent {
-		width: 5rem;
+		width: 4.5rem;
 	}
+}
+.menu-main-menu-container {
+	padding-top: 10px;
+	margin-left: 37rem;
 }
 .site-header {
 	text-transform: uppercase;
-	-webkit-text-fill-color: white;
-	height: 50px;
+	-webkit-text-fill-color: #248a83;
+	background-color: hsla(0,0%,100%,.85);
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	z-index: 3;
+	border: 1px solid #e1e1e1;
 	.container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		margin: -8px;
 	}
 	.site-branding {
 		height: 33px;
 		width: 50px;
-		margin-left: 80px;
 		// background-image: url('/assets/project-04/images/logos/inhabitent-logo-tent.svg');
 	}
+}
+.home .entry-title a {
+	display: none;
 }
