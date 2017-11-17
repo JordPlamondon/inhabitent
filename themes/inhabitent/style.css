@@ -406,7 +406,9 @@ h1 {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px; }
   .product-info-container .product-type-blocks .product-type-block-wrapper {
     border: 1px solid #e1e1e1;
     border-top-width: 5px;
@@ -415,7 +417,8 @@ h1 {
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
-    margin: 10px; }
+    margin: 10px;
+    width: 10%; }
 
 .product-info-container img {
   width: 70px; }
@@ -658,7 +661,7 @@ a {
 
 .menu-main-menu-container {
   padding-top: 10px;
-  margin-left: 37rem; }
+  margin-left: 700px; }
 
 .site-header {
   text-transform: uppercase;
@@ -972,3 +975,24 @@ object {
 /* Shop Page */
 .archive #secondary {
   display: none; }
+
+.shop-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none; }
+
+.shop-container .shop-thumbnail {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 23%;
+          flex: 0 1 23%;
+  width: 30%; }

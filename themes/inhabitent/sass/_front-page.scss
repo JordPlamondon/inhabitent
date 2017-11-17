@@ -24,7 +24,8 @@
     display: flex;
     flex-flow: row wrap;
     flex-wrap: wrap;
-   
+    padding-left: 50px;
+    padding-right: 50px;
     .product-type-block-wrapper {
       border: 1px solid #e1e1e1;
       border-top-width: 5px;
@@ -32,7 +33,7 @@
       padding: 1rem 1rem;
       flex: auto;
       margin: 10px;
-    
+      width: 10%;
     }  
   }
   img {

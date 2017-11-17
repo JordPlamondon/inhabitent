@@ -38,20 +38,7 @@
 						<i class="fa fa-search" aria-hidden="true"></i>
 					</nav><!-- #site-navigation -->
 				</div>	
-				
-				<?php if ( is_front_page() || is_page('about')  || is_page('shop') ) { ?>
-                        <img src="<?php echo get_template_directory_uri() . '/assets/project-04/images/logos/inhabitent-logo-tent-white.svg'; ?>" class="logo" alt="inhabitent logo" />
-                    <?php } else { ?>
-                        <img src="<?php echo get_template_directory_uri() . '/assets/project-04/images/logos/inhabitent-logo-tent.svg'; ?>" class="logo" alt="inhabitent logo" />
-                    <?php } ?>
+
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
-
-<!-- save for later -->
-			<!-- <a href="http://localhost:3000/inhabitentproject4/"><img 
-					src="assets/project-04/images/logos/inhabitent-logo-tent-white.svg"/></a> -->
-
-<!-- tent logo -->
-					<!-- <img 
-					src="/assets/project-04/images/logos/inhabitent-logo-tent-white.svg"/></a> -->
