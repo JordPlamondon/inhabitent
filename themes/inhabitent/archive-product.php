@@ -16,23 +16,24 @@ get_header(); ?>
       
       <header class="page-header">
         
-        <div class="shop-container">  
+        
 				  <?php
             // the_archive_description( '<div class="taxonomy-description">', '</div>' );
-            echo CFS()->get('price');
+            
 
           
             if ( has_post_thumbnail() ) : ?>
 
+        <div class="shop-container">  
           <ul>
             <?php 
-            $args = array( 'posts_per_page' => '15', 'post_type'=> 'product' );
+            $args = array( 'posts_per_page' => '16', 'post_type'=> 'product' );
     	      $product_posts = get_posts( $args );?>
     	      <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
             <li>
-            <div class="shop-thumbnail">  
             <?php the_post_thumbnail( 'large' ); ?>
-            </div>
+            <?php the_title(); ?>
+            <?php echo CFS()->get('price'); ?>
             </li>
             <?php endforeach; wp_reset_postdata(); ?>
           </ul>
