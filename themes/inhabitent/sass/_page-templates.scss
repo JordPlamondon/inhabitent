@@ -55,6 +55,13 @@
     width: 30%;
     padding: 50px 50px;
     margin-top: 40px;
+    ul {
+      list-style-type: none;
+    }
+    a {
+      margin-left: 10px;
+      text-decoration: none;
+    }
   }
 }
 
@@ -101,11 +108,65 @@
 .page-template-about .entry-content {
   margin: 3rem auto;
   max-width: 800px;
+  padding-bottom: 3rem;
 }
 .page-template-about h2 {
   text-align: center;
+  color: #2f1339;
+  font-size: 2rem;
   padding-top: 10px;
+
 }
 .page-template-about p {
  margin-bottom: -0.5rem;
 }
+
+/* Find Us Page */
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content {
+  margin: 0 auto;
+  height: 100%; 
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  #primary {
+    flex: 1 1 70%;
+    width: 70%;
+    h2 {
+      color: #2f1339;
+      text-transform: uppercase;
+      font-size: 33.6px;
+      font-size: 2.1rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  #map {
+    height: 300px;
+    width: 100%;
+  }
+  #secondary {
+    flex: 1 1 30%;
+    width: 30%;
+    padding: 50px 50px;
+    margin-top: 40px;
+    ul {
+      list-style-type: none;
+    }
+    a {
+      margin-left: 10px;
+      text-decoration: none;
+    }
+  }
+  .site-main {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 60px 60px;
+    margin-top: 40px;
+  }
+}
+// body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) h1 {
+
+// }
+
+  

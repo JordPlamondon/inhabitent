@@ -369,6 +369,7 @@ h1 {
   margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  font-size: 3rem;
   color: white;
   text-align: center; }
 
@@ -960,6 +961,11 @@ object {
     width: 30%;
     padding: 50px 50px;
     margin-top: 40px; }
+    .blog #content #secondary ul {
+      list-style-type: none; }
+    .blog #content #secondary a {
+      margin-left: 10px;
+      text-decoration: none; }
 
 .widget-area {
   -ms-flex-wrap: wrap;
@@ -1004,11 +1010,65 @@ object {
 /* About Page */
 .page-template-about .entry-content {
   margin: 3rem auto;
-  max-width: 800px; }
+  max-width: 800px;
+  padding-bottom: 3rem; }
 
 .page-template-about h2 {
   text-align: center;
+  color: #2f1339;
+  font-size: 2rem;
   padding-top: 10px; }
 
 .page-template-about p {
   margin-bottom: -0.5rem; }
+
+/* Find Us Page */
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content {
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #primary {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 70%;
+            flex: 1 1 70%;
+    width: 70%; }
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #primary h2 {
+      color: #2f1339;
+      text-transform: uppercase;
+      font-size: 33.6px;
+      font-size: 2.1rem;
+      margin-bottom: 1.5rem; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #map {
+    height: 300px;
+    width: 100%; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #secondary {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+    width: 30%;
+    padding: 50px 50px;
+    margin-top: 40px; }
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #secondary ul {
+      list-style-type: none; }
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #secondary a {
+      margin-left: 10px;
+      text-decoration: none; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content .site-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    padding: 60px 60px;
+    margin-top: 40px; }
