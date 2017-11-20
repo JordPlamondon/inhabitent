@@ -129,13 +129,20 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   display: flex;
   flex-flow: row wrap;
   flex-wrap: wrap;
+  h3 {
+    text-transform: uppercase;
+    color: #404040;
+    font-size: 2.1rem;
+  }
+  h1 {
+    display: none;
+  }
   #primary {
     flex: 1 1 70%;
     width: 70%;
     h2 {
       color: #2f1339;
       text-transform: uppercase;
-      font-size: 33.6px;
       font-size: 2.1rem;
       margin-bottom: 1.5rem;
     }
@@ -161,8 +168,8 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     display: flex;
     flex-direction: column;
     width: auto;
-    padding: 60px 60px;
-    margin-top: 40px;
+    padding: 60px 70px;
+    // margin-top: 50px;
   }
 }
 // body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) h1 {
