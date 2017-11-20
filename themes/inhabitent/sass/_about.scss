@@ -1,6 +1,9 @@
-.entry-content {
-  text-align: center;
-} 
+// .entry-content {
+// 	display: flex;
+// 	flex-direction: column;
+// 	width: 50rem;
+// 	width: 70%;
+// } 
 h1 {
   position: absolute;
 	top: 50%;
@@ -8,4 +11,6 @@ h1 {
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 	color: white; 
+	text-align: center;
 }
+

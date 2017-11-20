@@ -362,9 +362,6 @@ big {
   .site-footer .business {
     padding-right: 15rem; }
 
-.entry-content {
-  text-align: center; }
-
 h1 {
   position: absolute;
   top: 50%;
@@ -372,7 +369,8 @@ h1 {
   margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: white; }
+  color: white;
+  text-align: center; }
 
 .hero {
   display: -webkit-box;
@@ -1002,3 +1000,15 @@ object {
     width: 20%; }
     .shop-container ul li img {
       height: 200px; }
+
+/* About Page */
+.page-template-about .entry-content {
+  margin: 3rem auto;
+  max-width: 800px; }
+
+.page-template-about h2 {
+  text-align: center;
+  padding-top: 10px; }
+
+.page-template-about p {
+  margin-bottom: -0.5rem; }
