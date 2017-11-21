@@ -14,15 +14,31 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
       
-      <header class="page-header">
+      <header class="shop-page">
+      <h4>Shop Stuff</h4>
         
-        
-				  <?php
-            // the_archive_description( '<div class="taxonomy-description">', '</div>' );
-            
+      <?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
+        <ul class="product-list">
+        <?php    
+          $terms = get_terms( array(
+            'taxonomy' => 'product-type',
+            'order' => 'ASC',
+						'hide_empty' => false,
+          ));
 
+          foreach ($terms as $term) :
+          $url = get_term_link ($term->slug , 'product-type'); ?>    
+					<li class="shop-stuff-item">                   
+            <a href='<?php echo $url ?>' class='button'><?php echo $term->name; ?></a>
+					</li>
+        <?php
+          endforeach; ?>  
           
+				  <?php
+  
             if ( has_post_thumbnail() ) : ?>
+        </ul>
 
         <div class="shop-container">  
           <ul>

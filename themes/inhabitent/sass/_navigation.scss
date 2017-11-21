@@ -143,6 +143,9 @@ a {
 	}
 	.white-tent {
 		width: 4.5rem;
+		img {
+			padding-top: 5px;
+		}
 	}
 }
 .menu-main-menu-container {
@@ -161,12 +164,11 @@ a {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: -8px;
+		margin: -10px;
 	}
 	.site-branding {
 		height: 33px;
 		width: 50px;
-		// background-image: url('/assets/project-04/images/logos/inhabitent-logo-tent.svg');
 	}
 }
 .home .entry-title a {

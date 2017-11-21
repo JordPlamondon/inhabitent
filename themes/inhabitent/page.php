@@ -10,7 +10,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<div class "find-us"><h3>find us</h3></div>
+
+		<h4>find us</h4>
 
 		<!-- Find Us Map -->
 	<div id="map"></div>
