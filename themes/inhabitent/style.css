@@ -980,15 +980,6 @@ object {
     margin-right: 15px; }
 
 /* Shop Page */
-.shop-page h4 {
-  text-align: center;
-  text-transform: uppercase;
-  color: #404040;
-  font-size: 2.1rem; }
-
-.shop-page h1 {
-  display: none; }
-
 .shop-page ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -996,11 +987,11 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10rem; }
+  padding-top: 10rem;
+  border-bottom: 1px dashed #a1a1a1; }
 
 .shop-page li {
   margin: 0 1.7rem;
-  text-transform: uppercase;
   list-style-type: none;
   text-decoration: none; }
   .shop-page li a {
@@ -1053,7 +1044,7 @@ object {
   margin-bottom: -0.5rem; }
 
 /* Find Us Page */
-body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content {
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site {
   margin: 0 auto;
   height: 100%;
   display: -webkit-box;
@@ -1065,39 +1056,39 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
           flex-flow: row wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content h4 {
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site h4 {
     text-transform: uppercase;
     color: #404040;
     font-size: 2.1rem; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content h1 {
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site h1 {
     display: none; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #primary {
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site #primary {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 70%;
             flex: 1 1 70%;
     width: 70%; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #primary h2 {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site #primary h2 {
       color: #2f1339;
       text-transform: uppercase;
       font-size: 2.1rem;
       margin-bottom: 1.5rem;
       margin-top: 2rem; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #map {
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site #map {
     height: 300px;
     width: 100%; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #secondary {
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site #secondary {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 30%;
             flex: 1 1 30%;
     width: 30%;
     padding: 50px 50px;
     margin-top: 40px; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #secondary ul {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site #secondary ul {
       list-style-type: none; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content #secondary a {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site #secondary a {
       margin-left: 10px;
       text-decoration: none; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content .site-main {
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site .site-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1107,19 +1098,19 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
             flex-direction: column;
     width: auto;
     padding: 60px 70px; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content .wpcf7 {
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site .wpcf7 {
     text-transform: uppercase; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content .wpcf7 .wpcf7-text {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site .wpcf7 .wpcf7-text {
       background-color: whitesmoke;
       border-radius: 0;
       width: 55%;
       height: 2.5rem; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content .wpcf7 .wpcf7-textarea {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site .wpcf7 .wpcf7-textarea {
       background-color: whitesmoke;
       border-radius: 0; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content .wpcf7 .required {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site .wpcf7 .required {
       color: #d99054; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content .wpcf7 .wpcf7-submit {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site .wpcf7 .wpcf7-submit {
       color: white;
       text-decoration: none;
       font-size: .9rem;

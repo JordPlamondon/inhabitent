@@ -15,10 +15,10 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
       
       <header class="shop-page">
-      <h4>Shop Stuff</h4>
-        
+
       <?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
+        
         <ul class="product-list">
         <?php    
           $terms = get_terms( array(
@@ -47,7 +47,9 @@ get_header(); ?>
     	      $product_posts = get_posts( $args );?>
     	      <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
             <li>
+            <a href="<?php the_permalink(); ?>" rel="product"> 
             <?php the_post_thumbnail( 'large' ); ?>
+            </a>
             <?php the_title(); ?>
             <?php echo CFS()->get('price'); ?>
             </li>

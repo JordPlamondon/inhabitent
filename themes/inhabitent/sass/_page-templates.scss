@@ -65,7 +65,6 @@
     }
   }
 }
-
 .widget-area {
   flex-wrap: wrap;
   border: 1px solid #e1e1e1;
@@ -81,23 +80,25 @@
 /* Shop Page */
 
 .shop-page {
-  h4 {
-    text-align: center;
-    text-transform: uppercase;
-    color: #404040;
-    font-size: 2.1rem;
-  }
-  h1 {
-    display: none;
-  }
+  // h4 {
+  //   text-align: center;
+  //   text-transform: uppercase;
+  //   color: #404040;
+  //   font-size: 2.1rem;
+  // }
+  // h1 {
+  //   display: none;
+  // }
   ul {
     display: flex;
     justify-content: center;
     padding-top: 10rem;
+    border-bottom: 1px dashed #a1a1a1;
+
   }
   li {
     margin: 0 1.7rem;
-    text-transform: uppercase;
+   
     list-style-type: none;
     text-decoration: none;
     a {
@@ -151,7 +152,7 @@
 
 /* Find Us Page */
 
-body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) #content {
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site {
   margin: 0 auto;
   height: 100%; 
   display: flex;
@@ -229,11 +230,5 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
       width: 14%;
     }
   }
-  // input[type="text"]
-  // {
-  //     background-color: #fff;
-  //     color: #000;
-  //     width: 50%;
-  // }
 }
   
