@@ -24,7 +24,7 @@
 				<div class="container">
 					<div class="site-branding">
 	
-					</div><!-- .site-branding -->
+				</div><!-- .site-branding -->
 					
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="white-tent">	
@@ -35,10 +35,10 @@
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						<!-- search icon -->
-						<i class="fa fa-search" aria-hidden="true"></i>
+						<?php get_search_form(); ?>
 					</nav><!-- #site-navigation -->
 				</div>	
 
 			</header><!-- #masthead -->
 
-			<!-- <div id="content" class="site-content"> -->
+			<div id="content" class="site-content">

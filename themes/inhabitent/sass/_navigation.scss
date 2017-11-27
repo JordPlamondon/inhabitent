@@ -131,6 +131,14 @@ a {
 	}
 }
 
+/* My CSS */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0 20px;
+  margin-bottom: 20px;
+}
 .main-navigation {
 	display: flex;
 	justify-content: space-between;
@@ -143,6 +151,7 @@ a {
 	}
 	.white-tent {
 		width: 4.5rem;
+		padding-bottom: 10px;
 		img {
 			padding-top: 5px;
 		}
@@ -150,7 +159,7 @@ a {
 }
 .menu-main-menu-container {
 	padding-top: 10px;
-	margin-left: 700px;
+	margin-left: 500px;
 }
 .site-header {
 	text-transform: uppercase;
@@ -164,7 +173,7 @@ a {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: -10px;
+		margin: -20px;
 	}
 	.site-branding {
 		height: 33px;

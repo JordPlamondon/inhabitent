@@ -200,7 +200,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: none;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -512,7 +512,7 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
+  margin: -20px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
   input[type="button"]:hover,
@@ -643,6 +643,17 @@ a {
   text-align: right;
   width: 50%; }
 
+/* My CSS */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0 0 20px;
+  margin-bottom: 20px; }
+
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,13 +667,14 @@ a {
     padding: 25px 60px;
     padding-left: 10px; }
   .main-navigation .white-tent {
-    width: 4.5rem; }
+    width: 4.5rem;
+    padding-bottom: 10px; }
     .main-navigation .white-tent img {
       padding-top: 5px; }
 
 .menu-main-menu-container {
   padding-top: 10px;
-  margin-left: 700px; }
+  margin-left: 500px; }
 
 .site-header {
   text-transform: uppercase;
@@ -682,7 +694,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: -10px; }
+    margin: -20px; }
   .site-header .site-branding {
     height: 33px;
     width: 50px; }
@@ -906,7 +918,8 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 /*Journal Page */
-.blog #content {
+.blog #page {
+  /* was #content */
   margin: 0 auto;
   height: 100%;
   display: -webkit-box;
@@ -918,14 +931,14 @@ object {
           flex-flow: row wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .blog #content #primary {
+  .blog #page #primary {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 70%;
             flex: 1 1 70%;
     width: 70%; }
-    .blog #content #primary img {
+    .blog #page #primary img {
       width: 100%; }
-    .blog #content #primary h2 {
+    .blog #page #primary h2 {
       background-color: #248a83;
       font-size: 2.1rem;
       padding: .75rem 1.5rem;
@@ -933,10 +946,10 @@ object {
       margin-top: 2.25rem;
       max-width: 75%;
       top: 10px; }
-      .blog #content #primary h2 a {
+      .blog #page #primary h2 a {
         color: #fff;
         text-decoration: none; }
-  .blog #content .site-main {
+  .blog #page .site-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -947,9 +960,9 @@ object {
     width: auto;
     padding: 60px 60px;
     margin-top: 40px; }
-  .blog #content article {
+  .blog #page article {
     position: relative; }
-  .blog #content .entry-meta {
+  .blog #page .entry-meta {
     background-color: #248a83;
     text-transform: uppercase;
     color: #fff;
@@ -957,16 +970,16 @@ object {
     position: absolute;
     right: 0px;
     bottom: 9.5rem; }
-  .blog #content #secondary {
+  .blog #page #secondary {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 30%;
             flex: 1 1 30%;
     width: 30%;
     padding: 50px 50px;
     margin-top: 40px; }
-    .blog #content #secondary ul {
+    .blog #page #secondary ul {
       list-style-type: none; }
-    .blog #content #secondary a {
+    .blog #page #secondary a {
       margin-left: 10px;
       text-decoration: none; }
 
@@ -1014,8 +1027,7 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 80px; }
+  padding-right: 80px; }
   .shop-container ul li {
     -webkit-box-flex: 1;
         -ms-flex: auto;
@@ -1045,6 +1057,7 @@ object {
 
 /* Find Us Page */
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site {
+  /* was #content */
   margin: 0 auto;
   height: 100%;
   display: -webkit-box;
@@ -1056,12 +1069,6 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
           flex-flow: row wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site h4 {
-    text-transform: uppercase;
-    color: #404040;
-    font-size: 2.1rem; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site h1 {
-    display: none; }
   body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site #primary {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 70%;
@@ -1123,3 +1130,25 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
       text-shadow: none;
       border: 0;
       width: 14%; }
+
+/* Specific Category Shop Page */
+.category-blocks ul {
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 80px;
+  padding-right: 80px; }
+  .category-blocks ul li {
+    border: 1px solid #e1e1e1;
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+    width: 25%; }
