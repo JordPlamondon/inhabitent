@@ -203,6 +203,8 @@ fieldset {
   border: none;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
+  fieldset .search-field {
+    display: none; }
 
 legend {
   border: 0;
@@ -388,7 +390,8 @@ h1 {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  background-attachment: fixed; }
 
 .product-info-container h2 {
   text-align: center;
@@ -673,8 +676,8 @@ a {
       padding-top: 5px; }
 
 .menu-main-menu-container {
-  padding-top: 10px;
-  margin-left: 500px; }
+  padding-top: 15px;
+  margin-left: 44rem; }
 
 .site-header {
   text-transform: uppercase;
@@ -869,6 +872,10 @@ embed,
 iframe,
 object {
   max-width: 100%; }
+
+iframe {
+  height: 300px;
+  width: 100%; }
 
 /* Captions */
 .wp-caption {

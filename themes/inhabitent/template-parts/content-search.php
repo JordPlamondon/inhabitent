@@ -19,6 +19,6 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<?php the_content(); ?>
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->
