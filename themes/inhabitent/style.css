@@ -347,8 +347,7 @@ big {
   .site-footer .site-info {
     text-align: center;
     width: 100%;
-    text-transform: uppercase;
-    padding-top: 25px; }
+    text-transform: uppercase; }
   .site-footer .contact {
     padding-left: 4rem; }
     .site-footer .contact a {
@@ -801,8 +800,6 @@ a {
           justify-content: space-between; }
   .main-navigation a {
     margin: 0.8rem; }
-    .main-navigation a:hover {
-      color: #f0e4d1; }
   .main-navigation .fa {
     padding: 25px 60px;
     padding-left: 10px; }
@@ -969,6 +966,10 @@ fieldset {
     border: 1px solid black;
     padding: 10px 25px;
     text-decoration: none; }
+    .home .site-main ul a:hover {
+      background-color: #248a83;
+      border: 1px solid #248a83;
+      color: #fff; }
   .home .site-main ul li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1170,7 +1171,9 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 10rem;
-  border-top: 1px dashed #a1a1a1; }
+  border-top: 1px dashed #a1a1a1;
+  font-size: 1.2rem;
+  text-transform: uppercase; }
 
 .shop-page li {
   margin: 0 1.7rem;
@@ -1297,7 +1300,10 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
       border-radius: 0;
       text-shadow: none;
       border: 0;
-      width: 14%; }
+      width: 14%;
+      margin-left: 1px; }
+      body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site .wpcf7 .wpcf7-submit:hover {
+        background: #19625d; }
 
 /* Specific Category Shop Page */
 .category-blocks ul {

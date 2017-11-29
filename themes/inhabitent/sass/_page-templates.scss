@@ -97,6 +97,8 @@ h2 {
     justify-content: center;
     padding-top: 10rem;
     border-top: 1px dashed #a1a1a1;
+    font-size: 1.2rem;
+    text-transform: uppercase;
   }
   li {
     margin: 0 1.7rem;
@@ -227,6 +229,10 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
       text-shadow: none;
       border : 0;
       width: 14%;
+      margin-left: 1px;
+      &:hover {
+        background: darken(#248a83, 10%);
+      }
     }
   }
 }
