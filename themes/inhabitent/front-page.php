@@ -84,9 +84,9 @@ get_header(); ?>
 			</li>	
     	<?php endforeach; wp_reset_postdata(); ?>
 		</ul>
-		
+
 		<h2>Latest Adventures</h2>
-			<section class="adventures container">
+			<section class="adventure-container">
 
 				<ul class="clearfix">
 
@@ -112,12 +112,12 @@ get_header(); ?>
 						</li>
 
 					<?php endwhile;
-										wp_reset_postdata(); ?>
+						wp_reset_postdata(); ?>
 				</ul>
 				<p class="clearfix">
 					<a href="/adventures" class="button">More Adventures</a>
 				</p>
-</section><!-- .adventures -->
+			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
