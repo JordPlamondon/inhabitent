@@ -395,7 +395,10 @@ h1 {
 
 .product-info-container h2 {
   text-align: center;
-  padding-top: 40px; }
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 400; }
 
 .product-info-container .product-type-blocks {
   margin: 0 auto;
@@ -468,11 +471,14 @@ h1 {
   margin: 0 auto;
   margin-bottom: 5rem; }
 
-.front-page-h2 {
-  font-size: 2.5rem;
+.adventure-h2 {
+  font-size: 2.4rem;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 400; }
 
 .box-1 {
   height: 100%;
@@ -957,7 +963,7 @@ fieldset {
           justify-content: space-between;
   list-style-type: none;
   padding-left: 5rem;
-  padding-top: 5rem; }
+  padding-top: 1rem; }
   .home .site-main ul a {
     color: black;
     border: 1px solid black;
@@ -986,6 +992,14 @@ fieldset {
       list-style-position: none; }
   .home .site-main ul img {
     height: 98%; }
+
+.journal-h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-weight: 400; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -1067,6 +1081,9 @@ iframe {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+h2 {
+  color: #2f1339; }
+
 /*Journal Page */
 .blog #page {
   margin: 0 auto;

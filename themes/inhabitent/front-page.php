@@ -65,6 +65,7 @@ get_header(); ?>
 
 		<?php endif; ?>	
 
+		<h2 class ="journal-h2">Inahbitent Journal</h2>
 		<ul>
 			<?php
     	$args = array( 'posts_per_page' => '3');
@@ -86,7 +87,7 @@ get_header(); ?>
 		</ul>
 
 		<div class= "latest-adventures">
-    <h2 class ="front-page-h2">Latest Adventures</h2>
+    <h2 class ="adventure-h2">Latest Adventures</h2>
 
     <section class= "adventures">
         <div class="box-1">
