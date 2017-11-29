@@ -94,7 +94,7 @@
     display: flex;
     justify-content: center;
     padding-top: 10rem;
-    border-bottom: 1px dashed #a1a1a1;
+    border-top: 1px dashed #a1a1a1;
   }
   li {
     margin: 0 1.7rem;
@@ -116,9 +116,7 @@
   display: flex;
   flex-flow: row wrap;
   flex-wrap: wrap;
-  padding-left: 80px;
-  padding-right: 80px;
-  // padding-top: 80px;
+  padding: 80px 80px;
   li {
     flex: auto;
     border: 1px solid #e1e1e1;

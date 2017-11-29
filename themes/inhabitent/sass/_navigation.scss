@@ -143,6 +143,9 @@ a {
 	justify-content: space-between;
 	a {
 		margin: 0.8rem;
+		&:hover {
+			color: #f0e4d1;
+		}
 	}
 	.fa {
 		padding: 25px 60px;

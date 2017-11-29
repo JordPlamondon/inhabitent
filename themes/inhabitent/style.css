@@ -795,6 +795,8 @@ a {
           justify-content: space-between; }
   .main-navigation a {
     margin: 0.8rem; }
+    .main-navigation a:hover {
+      color: #f0e4d1; }
   .main-navigation .fa {
     padding: 25px 60px;
     padding-left: 10px; }
@@ -1151,7 +1153,7 @@ iframe {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 10rem;
-  border-bottom: 1px dashed #a1a1a1; }
+  border-top: 1px dashed #a1a1a1; }
 
 .shop-page li {
   margin: 0 1.7rem;
@@ -1176,8 +1178,7 @@ iframe {
           flex-flow: row wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 80px;
-  padding-right: 80px; }
+  padding: 80px 80px; }
   .shop-container ul li {
     -webkit-box-flex: 1;
         -ms-flex: auto;
