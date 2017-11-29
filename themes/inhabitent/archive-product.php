@@ -15,10 +15,13 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
       
       <header class="shop-page">
-
+    <?php 
+    single_term_title( '<h1 class="page-title">', '</h1>' ); ?>
       <?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
-        
+       <?php   
+          the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
+      
         <ul class="product-list">
         <?php    
           $terms = get_terms( array(
@@ -47,11 +50,15 @@ get_header(); ?>
     	      $product_posts = get_posts( $args );?>
     	      <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
             <li>
-            <a href="<?php the_permalink(); ?>" rel="product"> 
-            <?php the_post_thumbnail( 'large' ); ?>
-            </a>
-            <?php the_title(); ?>
-            <?php echo CFS()->get('price'); ?>
+            <div class="thumbnail-backg">
+              <a href="<?php the_permalink(); ?>" rel="product"> 
+              <?php the_post_thumbnail( 'large' ); ?>
+              </a>
+            </div>
+            <div class="title-price-text">
+              <?php the_title(); ?>
+              <?php echo CFS()->get('price'); ?>
+            </div>
             </li>
             <?php endforeach; wp_reset_postdata(); ?>
           </ul>

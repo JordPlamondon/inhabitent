@@ -37,6 +37,7 @@ function inhabitent_login_url() {
 }
 add_filter('login_headerurl', 'inhabitent_login_url');
 
+
 function inhabitent_logo_url_title() {
 	return 'inhabitent';
 }
@@ -66,3 +67,15 @@ function inhabitent_dynamic_css() {
 	wp_add_inline_style( 'tent-style', $hero_css );
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
+
+add_filter( 'get_the_archive_title', 'inhabitent_filter_archive_title');
+
+function inhabitent_filter_archive_title( $title ) {
+
+	if( is_post_type_archive('product') ) {
+		$title = 'Shop Stuff';
+
+	}
+	return $title;
+
+};

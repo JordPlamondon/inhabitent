@@ -16,7 +16,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+			<!-- <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?> -->
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -28,6 +28,11 @@
 				'after'  => '</div>',
 			) );
 		?>
+		<div class="social-buttons">
+			<button type="button" name="button" class="moretag"><i class="fa fa-facebook"></i> Like</button>
+			<button type="button" name="button" class="moretag"><i class="fa fa-twitter"></i> tweet</button>
+			<button type="button" name="button" class="moretag"><i class="fa fa-pinterest"></i> Pin</button>
+		</div>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

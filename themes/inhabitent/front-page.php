@@ -65,7 +65,7 @@ get_header(); ?>
 
 		<?php endif; ?>	
 
-		<h2 class ="journal-h2">Inahbitent Journal</h2>
+		<h2 class ="journal-h2">Inhabitent Journal</h2>
 		<ul>
 			<?php
     	$args = array( 'posts_per_page' => '3');

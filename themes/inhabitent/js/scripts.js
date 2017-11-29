@@ -1,5 +1,7 @@
-(function ($) {
+(function($) {
   
+  console.log('loaded');
+
  $( "#search-submit" ).on('click', function(e) {
    e.preventDefault();
    $( "#search-field" ).toggle().focus();

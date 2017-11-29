@@ -94,6 +94,9 @@ function red_starter_scripts() {
 	// if font awesome is a javascript link
 	// wp_enqueue_script( 'font-awesome-cdn', 'javascript link', array(), version (ex.'4.7'), true );
 
+	wp_enqueue_script( 'inhabitent-scripts', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), false, true );
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

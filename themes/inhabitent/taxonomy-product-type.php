@@ -12,29 +12,39 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<section class="page-header">
+				<h1>
+				<?php 
+					single_term_title( '<h1 class="page-title">', '</h1>' );
+					?>
+				</h1>
 				<?php
-					// the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
+			</section><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
+			<ul>
       <?php while ( have_posts() ) : the_post(); ?>
       
       <div class="category-blocks">
-        <ul>
           <li>
-          <a href="<?php the_permalink(); ?>" rel="product"> 
-            <?php the_post_thumbnail( 'large' ); ?>
-            <?php the_title(); ?>
-            <?php echo CFS()->get('price'); ?>
-            </a>
+						<div class="thumbnail-bg">
+          	<a href="<?php the_permalink(); ?>" rel="product"> 
+							<?php the_post_thumbnail( 'large' ); ?>
+						</a>
+						</div>
+						<div class"product-text">
+            	<p><?php the_title(); ?>
+								<?php echo CFS()->get('price'); ?>
+							</p>
+						</div>
           </li>
-        </ul>
-      </div>
+        
+			</div>
       
 			<?php endwhile; ?>
+			</ul>
 
 			<?php the_posts_navigation(); ?>
 
