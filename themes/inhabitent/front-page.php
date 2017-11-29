@@ -85,39 +85,38 @@ get_header(); ?>
     	<?php endforeach; wp_reset_postdata(); ?>
 		</ul>
 
-		<h2>Latest Adventures</h2>
-			<section class="adventure-container">
+		<div class= "latest-adventures">
+    <h2 class ="front-page-h2">Latest Adventures</h2>
 
-				<ul class="clearfix">
+    <section class= "adventures">
+        <div class="box-1">
+            <h3><a class = "adventure-link" href ="#">Getting Back to Nature in a Canoe</a></h3>
+            <p><a class = "read-more-button" href ="#">Read More</a></p>
+        </div>
+        <div class="right-box">
+            <div class="box-2">
+                <h3><a class = "adventure-link" href ="#">A Night with Friends at the Beach</a></h3><br>
+                <p><a class = "read-more-button" href ="#">Read More</a></p>
 
-					<?php
-						$query = new WP_Query( array(
-							'post_type' => 'adventure',
-						 	'order' => 'ASC',
-							'orderby' => 'date',
-							'posts_per_page' => 4)
-						);
-						while ( $query->have_posts() ) : $query->the_post(); ?>
+            </div>
+            <div class = "bottom-right-box">  
+                <div class="box-3">
+								<?php the_post_thumbnail( 'full' ); ?>
+                    <h3><a class = "adventure-link" href ="#">Taking in the View at Big Mountain</a></h3>
+                    <p><a class = "read-more-button" href ="#">Read More</a></p>
 
-						<li>
-							<div class="story-wrap">
-								<div class="adventure-image">
-									<?php the_post_thumbnail( 'full' ); ?>
-								</div>
-								<div class="story-info">
-									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-									<a class="readtag" href="<?php the_permalink(); ?>">Read More</a>
-								</div>
-							</div>
-						</li>
+                </div>
+                <div class="box-4">
+                    <h3><a class = "adventure-link" href ="#">Star-Gazing at the Night Sky</a></h3>
+                    <p><a class = "read-more-button" href ="#">Read More</a></p>
 
-					<?php endwhile;
-						wp_reset_postdata(); ?>
-				</ul>
-				<p class="clearfix">
-					<a href="/adventures" class="button">More Adventures</a>
-				</p>
-			</section>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+     <p><a class = "more-adventures-button" href ="#">More Adventures</a></p>
+</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
