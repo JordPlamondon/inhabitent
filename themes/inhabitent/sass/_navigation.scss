@@ -157,6 +157,18 @@ a {
 		}
 	}
 }
+fieldset {
+  border: none;
+  #search-submit {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    .fa.fa-search {
+      color: white;
+      text-shadow: 1px 1px 2px #000;
+    }
+  }
+}
 .menu-main-menu-container {
 	padding-top: 15px;
 	margin-left: 44rem;

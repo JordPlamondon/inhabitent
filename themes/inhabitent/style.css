@@ -675,6 +675,17 @@ a {
     .main-navigation .white-tent img {
       padding-top: 5px; }
 
+fieldset {
+  border: none; }
+  fieldset #search-submit {
+    border: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    fieldset #search-submit .fa.fa-search {
+      color: white;
+      text-shadow: 1px 1px 2px #000; }
+
 .menu-main-menu-container {
   padding-top: 15px;
   margin-left: 44rem; }
