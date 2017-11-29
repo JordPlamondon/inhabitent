@@ -6,6 +6,9 @@
 h2 {
   color: #2f1339;
 }
+p {
+  // font-family: Merriweather Web,serif;
+}
 
 /*Journal Page */
 .blog #page {    
@@ -31,6 +34,27 @@ h2 {
       a {
         color: #fff;
         text-decoration: none;
+        &:hover {
+          color: #f0e4d1
+        }
+      }
+    }
+    .read-more-button {
+      color: #000;
+      border: 1px solid #000;
+      padding: 10px 25px;
+      width: 18%;
+      &:hover {
+        background: #248a83;
+        border: #248a83;
+        color: white;
+    }
+    &:visited {
+        color: white;
+      }
+      a {
+        text-decoration: none;
+        color: black;
       }
     }
   }
@@ -81,7 +105,7 @@ h2 {
 /* Shop Page */
 .shop-page {
   h1 {
-    color: #2f1339;
+    color: #404040;
     top: 8rem;
     text-transform: uppercase;
     font-size: 2.4rem;
@@ -135,6 +159,7 @@ h2 {
       }
       .title-price-text {
         margin-top: 15px;
+        font-family: Merriweather Web,serif;
       }
     img {
       height: 200px;
@@ -147,6 +172,12 @@ h2 {
   margin: 3rem auto;
   max-width: 800px;
   padding-bottom: 3rem;
+  h2 {
+    text-transform: uppercase;
+  }
+  p {
+    font-family: Merriweather Web,serif;
+  }
 }
 .page-template-about h2 {
   text-align: center;
@@ -157,9 +188,13 @@ h2 {
 .page-template-about p {
  margin-bottom: -0.5rem;
 }
+.entry-title {
+  text-transform: uppercase;
+  font-family: Novecento Sans Web,sans-serif;
+}
 
 /* Find Us Page */
-body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site {    /* was #content */
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site {    /* was #content */
   margin: 0 auto;
   height: 100%; 
   display: flex;
@@ -168,13 +203,21 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
   #primary {
     flex: 1 1 70%;
     width: 70%;
-    h2 {
-      color: #2f1339;
+    .entry-title {
+      color: #404040;
       text-transform: uppercase;
-      font-size: 2.1rem;
-      margin-bottom: 1.5rem;
-      margin-top: 2rem;
+      font-size: 2.4rem;
+      left: 12%;
+      top: 3rem;
+      padding-top: 10rem;
     }
+  }
+  p {
+    font-family: Merriweather Web,serif;
+  }
+  h2 {
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform: uppercase;
   }
   #map {
     height: 300px;
@@ -198,6 +241,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
     flex-direction: column;
     width: auto;
     padding: 60px 70px;
+    padding-top: 10rem;
   }
   .wpcf7 {
     text-transform: uppercase;
@@ -217,7 +261,6 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
     .wpcf7-submit {
       color: white;
       text-decoration: none;
-      
       font-size: .9rem;
       padding: .75rem 1.5rem;
       text-transform: uppercase;
@@ -349,6 +392,25 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
       }
     }
   }
+  .social-buttons {
+    padding-left: 30px;
+    margin: 1.5rem 0;
+    .moretag {
+      border: 1px solid #000;
+      color: #000;
+      background: #fff;
+      margin: 20px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      &:hover {
+        background: #248a83;
+        border: #248a83;
+        color: #fff;
+        text-shadow: none;
+        box-shadow: none;
+      }
+    }
+  }
 }
 
 //Product Specific Category Page
@@ -400,7 +462,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
 // Specific Product Page
 .single-product {
   .product-type-do {
-    padding-bottom: 110px;
+    padding-bottom: 60px;
   }
   .type-product {
     display: flex;
@@ -419,7 +481,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
     text-transform: uppercase;
   }
   .entry-title {
-    margin-left: 7.5rem;
+    margin-left: 14.6rem;
   }
   .attachment-large {
     width: 100%;
@@ -433,6 +495,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
       background: #fff;
       margin: 20px;
       padding: 12px 25px;
+      font-size: 1rem;
     }
   }
 }

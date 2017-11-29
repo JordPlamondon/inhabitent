@@ -229,29 +229,29 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'merriweather';
-  src: url("../fonts/merriweather-bold-webfont.eot");
-  src: url("../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../fonts/merriweather-bold-webfont.woff") format("woff"), url("../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  src: url("../../assets/project-04/fonts/merriweather-bold-webfont.eot");
+  src: url("../../assets/project-04/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/project-04/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../assets/project-04/fonts/merriweather-bold-webfont.woff") format("woff"), url("../../assets/project-04/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../assets/project-04/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'merriweather';
-  src: url("../fonts/merriweather-light-webfont.eot");
-  src: url("../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../fonts/merriweather-light-webfont.woff") format("woff"), url("../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  src: url("../../assets/project-04/fonts/merriweather-light-webfont.eot");
+  src: url("../../assets/project-04/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/project-04/fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../assets/project-04/fonts/merriweather-light-webfont.woff") format("woff"), url("../../assets/project-04/fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../assets/project-04/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'novacento';
-  src: url("../fonts/novecentosanswide-normal-webfont.eot");
-  src: url("../fonts/mnovecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../fonts/novecentosanswide-normal-webfontsvg#mnovecentosanswide") format("svg");
+  src: url("../../assets/project-04/fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../assets/project-04/fonts/mnovecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/project-04/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../assets/project-04/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../assets/project-04/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../assets/project-04/fonts/novecentosanswide-normal-webfontsvg#mnovecentosanswide") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'novacento';
-  src: url("../fonts/novecentosanswide-demibold-webfont.eot");
-  src: url("../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../fonts/novecentosanswide-demibold-webfont.svg#novecentosanswide-demibold") format("svg");
+  src: url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.svg#novecentosanswide-demibold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -431,7 +431,7 @@ h1 {
 .product-info-container .btn {
   color: white;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: 1rem;
   padding: .75rem 1.5rem;
   text-transform: uppercase;
   background-color: #248a83; }
@@ -451,7 +451,8 @@ h1 {
   height: 600px;
   margin: 0 auto;
   width: 1120px;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-family: Merriweather Web,serif; }
   .adventures h3 {
     font-weight: normal; }
   .adventures a {
@@ -642,7 +643,6 @@ input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
   background: #e6e6e6;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
@@ -823,7 +823,8 @@ fieldset {
 
 .menu-main-menu-container {
   padding-top: 12px;
-  margin-left: 44rem; }
+  margin-left: 44rem;
+  font-size: .9rem; }
 
 .site-header {
   text-transform: uppercase;
@@ -925,6 +926,9 @@ fieldset {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+body {
+  font-size: 1.1rem; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -1116,6 +1120,22 @@ h2 {
       .blog #page #primary h2 a {
         color: #fff;
         text-decoration: none; }
+        .blog #page #primary h2 a:hover {
+          color: #f0e4d1; }
+    .blog #page #primary .read-more-button {
+      color: #000;
+      border: 1px solid #000;
+      padding: 10px 25px;
+      width: 18%; }
+      .blog #page #primary .read-more-button:hover {
+        background: #248a83;
+        border: #248a83;
+        color: white; }
+      .blog #page #primary .read-more-button:visited {
+        color: white; }
+      .blog #page #primary .read-more-button a {
+        text-decoration: none;
+        color: black; }
   .blog #page .site-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1161,7 +1181,7 @@ h2 {
 
 /* Shop Page */
 .shop-page h1 {
-  color: #2f1339;
+  color: #404040;
   top: 8rem;
   text-transform: uppercase;
   font-size: 2.4rem; }
@@ -1221,7 +1241,8 @@ h2 {
       overflow: hidden;
       position: relative; }
     .shop-container ul li .title-price-text {
-      margin-top: 15px; }
+      margin-top: 15px;
+      font-family: Merriweather Web,serif; }
     .shop-container ul li img {
       height: 200px; }
 
@@ -1230,6 +1251,10 @@ h2 {
   margin: 3rem auto;
   max-width: 800px;
   padding-bottom: 3rem; }
+  .page-template-about .entry-content h2 {
+    text-transform: uppercase; }
+  .page-template-about .entry-content p {
+    font-family: Merriweather Web,serif; }
 
 .page-template-about h2 {
   text-align: center;
@@ -1240,8 +1265,12 @@ h2 {
 .page-template-about p {
   margin-bottom: -0.5rem; }
 
+.entry-title {
+  text-transform: uppercase;
+  font-family: Novecento Sans Web,sans-serif; }
+
 /* Find Us Page */
-body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site {
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site {
   /* was #content */
   margin: 0 auto;
   height: 100%;
@@ -1254,33 +1283,39 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
           flex-flow: row wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site #primary {
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site #primary {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 70%;
             flex: 1 1 70%;
     width: 70%; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site #primary h2 {
-      color: #2f1339;
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site #primary .entry-title {
+      color: #404040;
       text-transform: uppercase;
-      font-size: 2.1rem;
-      margin-bottom: 1.5rem;
-      margin-top: 2rem; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site #map {
+      font-size: 2.4rem;
+      left: 12%;
+      top: 3rem;
+      padding-top: 10rem; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site p {
+    font-family: Merriweather Web,serif; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site h2 {
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform: uppercase; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site #map {
     height: 300px;
     width: 100%; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site #secondary {
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site #secondary {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 30%;
             flex: 1 1 30%;
     width: 30%;
     padding: 50px 50px;
     margin-top: 40px; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site #secondary ul {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site #secondary ul {
       list-style-type: none; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site #secondary a {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site #secondary a {
       margin-left: 10px;
       text-decoration: none; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site .site-main {
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site .site-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1289,20 +1324,21 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
         -ms-flex-direction: column;
             flex-direction: column;
     width: auto;
-    padding: 60px 70px; }
-  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site .wpcf7 {
+    padding: 60px 70px;
+    padding-top: 10rem; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site .wpcf7 {
     text-transform: uppercase; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site .wpcf7 .wpcf7-text {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site .wpcf7 .wpcf7-text {
       background-color: whitesmoke;
       border-radius: 0;
       width: 55%;
       height: 2.5rem; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site .wpcf7 .wpcf7-textarea {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site .wpcf7 .wpcf7-textarea {
       background-color: whitesmoke;
       border-radius: 0; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site .wpcf7 .required {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site .wpcf7 .required {
       color: #d99054; }
-    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site .wpcf7 .wpcf7-submit {
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site .wpcf7 .wpcf7-submit {
       color: white;
       text-decoration: none;
       font-size: .9rem;
@@ -1316,7 +1352,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
       border: 0;
       width: 14%;
       margin-left: 1px; }
-      body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure) .site .wpcf7 .wpcf7-submit:hover {
+      body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-product):not(.single-adventure):not(.blog):not(.post-template-default) .site .wpcf7 .wpcf7-submit:hover {
         background: #19625d; }
 
 /* Specific Category Shop Page */
@@ -1430,6 +1466,23 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
     .single-post .entry-footer .cat-links a, .single-post .entry-footer .tags-links a {
       text-decoration: none;
       color: #248a83; }
+  .single-post .social-buttons {
+    padding-left: 30px;
+    margin: 1.5rem 0; }
+    .single-post .social-buttons .moretag {
+      border: 1px solid #000;
+      color: #000;
+      background: #fff;
+      margin: 20px;
+      padding: 12px 25px;
+      font-size: 1rem; }
+      .single-post .social-buttons .moretag:hover {
+        background: #248a83;
+        border: #248a83;
+        color: #fff;
+        text-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none; }
 
 .tax-product-type .page-title {
   top: 8rem;
@@ -1475,7 +1528,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
   padding-top: 10px; }
 
 .single-product .product-type-do {
-  padding-bottom: 110px; }
+  padding-bottom: 60px; }
 
 .single-product .type-product {
   display: -webkit-box;
@@ -1496,7 +1549,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
   text-transform: uppercase; }
 
 .single-product .entry-title {
-  margin-left: 7.5rem; }
+  margin-left: 14.6rem; }
 
 .single-product .attachment-large {
   width: 100%; }
@@ -1509,4 +1562,5 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
     color: #000;
     background: #fff;
     margin: 20px;
-    padding: 12px 25px; }
+    padding: 12px 25px;
+    font-size: 1rem; }
