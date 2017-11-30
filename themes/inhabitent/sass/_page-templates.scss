@@ -6,9 +6,6 @@
 h2 {
   color: #2f1339;
 }
-p {
-  // font-family: Merriweather Web,serif;
-}
 
 /*Journal Page */
 .blog #page {    
@@ -326,9 +323,14 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
       }
     }
   }
+  #secondary {
+    flex: 1 1 30%;
+    width: 30%;
+    padding: 50px 50px;
+    margin-top: 40px;
+  }
   .site-main {
     display: flex;
-    flex-direction: column;
     width: auto;
     padding: 60px 60px;
     margin-top: 40px;
@@ -409,6 +411,18 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
         text-shadow: none;
         box-shadow: none;
       }
+    }
+  }
+}
+.post-template-default {
+  #page {
+    display: flex;
+    flex-flow: wrap;
+    a {
+      text-decoration: none;
+    }
+    ul {
+      list-style-type: none;
     }
   }
 }
