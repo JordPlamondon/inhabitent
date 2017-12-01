@@ -277,8 +277,10 @@ textarea {
   color: #404040;
   font-family: sans-serif;
   font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
+  font-size: 1rem; }
+
+p {
+  line-height: 1.5rem; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -452,11 +454,12 @@ h1 {
 .product-info-container .btn {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: .9rem;
   padding: .75rem 1.5rem;
   text-transform: uppercase;
   background-color: #248a83;
-  font-family: "novecento", sans-serif; }
+  font-family: "novecento", sans-serif;
+  font-weight: 300; }
   .product-info-container .btn:hover {
     background: #19625d;
     color: white; }
@@ -999,7 +1002,10 @@ body {
     color: black;
     border: 1px solid black;
     padding: 10px 25px;
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "novecento", sans-serif;
+    font-size: .9rem; }
     .home .site-main ul a:hover {
       background-color: #248a83;
       border: 1px solid #248a83;
@@ -1024,7 +1030,9 @@ body {
         font-size: 0.75rem; }
     .home .site-main ul li h2 {
       color: #248A83;
-      list-style-position: none; }
+      list-style-position: none;
+      text-transform: uppercase;
+      font-size: 1.3rem; }
   .home .site-main ul img {
     height: 98%; }
 

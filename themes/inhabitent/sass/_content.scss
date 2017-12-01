@@ -47,6 +47,9 @@ body {
 		border: 1px solid black;
 		padding: 10px 25px;
 		text-decoration: none;
+		text-transform: uppercase;
+		font-family: $font__nc;
+		font-size: .9rem;
 		&:hover {
 			background-color: #248a83;
 			border: 1px solid #248a83;
@@ -69,6 +72,8 @@ body {
 		h2 {
 			color: #248A83;
 			list-style-position: none;
+			text-transform: uppercase;
+			font-size: 1.3rem;
 		}
 	}
 	img {

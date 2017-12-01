@@ -80,7 +80,7 @@ get_header(); ?>
 					<?php the_date(); ?> / <?php comments_number(); ?> 
 				</div>				
 			<h2><?php the_title(); ?></h2>
-			<a href="<?php echo get_the_permalink();?>">Read More</a>
+			<a href="<?php echo get_the_permalink();?>">Read Entry</a>
 			</div>
 			</li>	
     	<?php endforeach; wp_reset_postdata(); ?>
