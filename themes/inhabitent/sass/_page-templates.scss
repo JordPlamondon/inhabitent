@@ -41,6 +41,8 @@ h2 {
       border: 1px solid #000;
       padding: 10px 25px;
       width: 18%;
+      margin-bottom: 2rem;
+      font-family: $font__nc;
       &:hover {
         background: #248a83;
         border: #248a83;
@@ -52,6 +54,9 @@ h2 {
       a {
         text-decoration: none;
         color: black;
+        &:hover {
+          color: white;
+        }
       }
     }
   }
@@ -72,7 +77,8 @@ h2 {
     padding: .2rem 1.5rem;
     position: absolute;
     right: 0px;
-    top: 30.4rem;
+    top: 30.25rem;
+    font-family: $font__nc;
   }
   #secondary {
     flex: 1 1 30%;
@@ -91,6 +97,11 @@ h2 {
 .widget-area {
   flex-wrap: wrap;
   border: 1px solid #e1e1e1;
+  .widget-title {
+    font-family: $font__nc;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
   a {
     color: #248a83;
   }
@@ -106,6 +117,7 @@ h2 {
     top: 8rem;
     text-transform: uppercase;
     font-size: 2.4rem;
+    font-family: $font__nc;
   }
   ul {
     display: flex;
@@ -113,6 +125,7 @@ h2 {
     padding-top: 11.5rem;
     padding-bottom: 20px;
     border-top: 1px dashed #a1a1a1;
+    font-family: $font__nc;
     .shop-stuff-item {
       text-transform: uppercase;
       font-size: 1.2rem;
@@ -156,7 +169,8 @@ h2 {
       }
       .title-price-text {
         margin-top: 15px;
-        font-family: Merriweather Web,serif;
+        font-family: $font__mw;
+        font-size: 1rem;
       }
     img {
       height: 200px;
@@ -171,9 +185,10 @@ h2 {
   padding-bottom: 3rem;
   h2 {
     text-transform: uppercase;
+    font-family: $font__nc;
   }
   p {
-    font-family: Merriweather Web,serif;
+    font-family: $font__mw;
   }
 }
 .page-template-about h2 {
@@ -182,12 +197,14 @@ h2 {
   font-size: 2rem;
   padding-top: 10px;
 }
-.page-template-about p {
- margin-bottom: -0.5rem;
+.page-template-about {
+  .container {
+    margin-bottom: -5rem;
+  }
 }
 .entry-title {
   text-transform: uppercase;
-  font-family: Novecento Sans Web,sans-serif;
+  font-family: $font__nc;
 }
 
 /* Find Us Page */
@@ -210,10 +227,11 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
     }
   }
   p {
-    font-family: Merriweather Web,serif;
+    font-family: $font__mw;
+    font-size: 1rem;
   }
   h2 {
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: $font__nc;
     text-transform: uppercase;
   }
   #map {
@@ -242,6 +260,9 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
   }
   .wpcf7 {
     text-transform: uppercase;
+    label {
+    font-family: $font__nc;      
+    }
     .wpcf7-text {
       background-color: rgb(245, 245, 245);
       border-radius: 0;
@@ -275,6 +296,15 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
   }
 }
 /* Specific Category Shop Page */
+.tax-product-type {
+  .site-main {
+    margin-top: -7rem;
+    h1 {
+      font-size: 2.4rem;
+
+    }
+  }
+}
 .category-blocks {
   ul {
     margin: 0 auto;
@@ -290,6 +320,9 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
       text-align: center;
       margin: 10px;
       width: 25%;
+      p {
+        font-size: 1rem;
+      }
     }
   }  
 }
@@ -369,7 +402,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
     border-radius: 0;
     color: #fff;
     cursor: pointer;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: $font__nc;
     font-size: 14.4px;
     font-size: .9rem;
     line-height: 1;
@@ -377,6 +410,10 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
     text-decoration: none;
     text-transform: uppercase;
     text-shadow: none;
+    &:hover {
+      background: darken(#248a83, 10%);
+      color: #fff;
+    }
   }
   .logged-in-as {
     display: none;
@@ -385,6 +422,8 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
     text-transform: uppercase;
   }
   .entry-footer {
+    font-size: 1rem;
+    font-family: $font__nc;
     .cat-links, .tags-links {
       text-transform: uppercase;
       margin-right: 1.5rem;
@@ -395,7 +434,6 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
     }
   }
   .social-buttons {
-    padding-left: 30px;
     margin: 1.5rem 0;
     .moretag {
       border: 1px solid #000;
@@ -403,7 +441,9 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
       background: #fff;
       margin: 20px;
       padding: 12px 25px;
-      font-size: 1rem;
+      font-size: .9rem;
+      text-transform: uppercase;
+      box-shadow: none;
       &:hover {
         background: #248a83;
         border: #248a83;
@@ -424,6 +464,9 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
     ul {
       list-style-type: none;
     }
+  }
+  .comment-form-comment {
+    font-family: $font__nc;
   }
 }
 
@@ -510,6 +553,9 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.single-pr
       margin: 20px;
       padding: 12px 25px;
       font-size: 1rem;
+      box-shadow: none;
+      text-transform: uppercase;
+      font-size: .9rem
     }
   }
 }

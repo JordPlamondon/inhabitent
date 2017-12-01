@@ -19,7 +19,6 @@
     text-transform: uppercase;
     font-size: 2.4rem;
     font-weight: 400;
-    font-family: $font__main;
   }
   .product-type-blocks {
     margin: 0 auto;
@@ -39,6 +38,9 @@
       &:hover {
         border-color: #d99054;
       }
+      p {
+        font-size: 1.11rem;
+      }
     }  
   }
   img {
@@ -51,6 +53,7 @@
     padding: .75rem 1.5rem;
     text-transform: uppercase;
     background-color: #248a83;
+    font-family: $font__nc;
     &:hover {
       background: darken(#248a83, 10%);
       color: white;
@@ -73,6 +76,7 @@
   margin-bottom: 2rem;
   h3 {
       font-weight: normal;
+      font-family: $font__mw;
   }
   a {
     text-decoration: none;
@@ -86,6 +90,9 @@
   }
   p a:hover {
     color: white;
+  }
+  p {
+    font-family: $font__nc;
   }
 }
 .latest-adventures {
@@ -182,6 +189,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: white;
+  font-family: $font__nc;
   background-color: #248a83;
   &:hover {
     background: darken(#248a83, 10%);

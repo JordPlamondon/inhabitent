@@ -18,6 +18,8 @@
   }
   h3 {
     color: #d99054;
+    font-family: $font__nc;
+    text-transform: uppercase;
   }
   .footer-logo {
     display: flex;
@@ -31,6 +33,11 @@
     text-align: center;
     width: 100%;
     text-transform: uppercase;
+    font-family: $font__mw;
+    font-size: 1rem;
+    p {
+      font-family: $font__nc;
+    }
   }
   .contact {
     padding-left: 4rem;
