@@ -224,34 +224,45 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
 @font-face {
   font-family: 'merriweather';
-  src: url("../../assets/project-04/fonts/merriweather-bold-webfont.eot");
-  src: url("../../assets/project-04/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/project-04/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../assets/project-04/fonts/merriweather-bold-webfont.woff") format("woff"), url("../../assets/project-04/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../assets/project-04/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  src: url("../assets/project-04/fonts/merriweather-lightitalic.eot");
+  src: url("../assets/project-04/fonts/merriweather-lightitalic.eot?#iefix") format("embedded-opentype"), url("../assets/project-04/fonts/merriweather-lightitalic.woff") format("woff"), url("../assets/project-04/fonts/merriweather-lightitalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../assets/project-04/fonts/merriweather-bolditalic.eot");
+  src: url("../assets/project-04/fonts/merriweather-bolditalic.eot?#iefix") format("embedded-opentype"), url("../assets/project-04/fonts/merriweather-bolditalic.woff") format("woff"), url("../assets/project-04/fonts/merriweather-bolditalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../assets/project-04/fonts/merriweather-bold.eot");
+  src: url("../assets/project-04/fonts/merriweather-bold.eot?#iefix") format("embedded-opentype"), url("../assets/project-04/fonts/merriweather-bold.woff") format("woff"), url("../assets/project-04/fonts/merriweather-bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'merriweather';
-  src: url("../../assets/project-04/fonts/merriweather-light-webfont.eot");
-  src: url("../../assets/project-04/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/project-04/fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../assets/project-04/fonts/merriweather-light-webfont.woff") format("woff"), url("../../assets/project-04/fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../assets/project-04/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  src: url("../assets/project-04/fonts/merriweather-light.eot");
+  src: url("../assets/project-04/fonts/merriweather-light.eot?#iefix") format("embedded-opentype"), url("../assets/project-04/fonts/merriweather-light.woff") format("woff"), url("../assets/project-04/fonts/merriweather-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novecento';
+  src: url("../assets/project-04/fonts/novecento-normal.eot");
+  src: url("../assets/project-04/fonts/novecento-normal.eot?#iefix") format("embedded-opentype"), url("../assets/project-04/fonts/novecento-normal.woff") format("woff"), url("../assets/project-04/fonts/novecento-normal.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'novacento';
-  src: url("../../assets/project-04/fonts/novecentosanswide-normal-webfont.eot");
-  src: url("../../assets/project-04/fonts/mnovecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/project-04/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../assets/project-04/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../assets/project-04/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../assets/project-04/fonts/novecentosanswide-normal-webfontsvg#mnovecentosanswide") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'novacento';
-  src: url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.eot");
-  src: url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../assets/project-04/fonts/novecentosanswide-demibold-webfont.svg#novecentosanswide-demibold") format("svg");
+  font-family: 'novecento';
+  src: url("../assets/project-04/fonts/novecento-demibold.eot");
+  src: url("../assets/project-04/fonts/novecento-demibold.eot?#iefix") format("embedded-opentype"), url("../assets/project-04/fonts/novecento-demibold.woff") format("woff"), url("../assets/project-04/fonts/novecento-demibold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
@@ -399,7 +410,8 @@ h1 {
   padding-top: 40px;
   text-transform: uppercase;
   font-size: 2.4rem;
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: sans-serif; }
 
 .product-info-container .product-type-blocks {
   margin: 0 auto;
@@ -453,8 +465,7 @@ h1 {
   height: 600px;
   margin: 0 auto;
   width: 1120px;
-  margin-bottom: 2rem;
-  font-family: Merriweather Web,serif; }
+  margin-bottom: 2rem; }
   .adventures h3 {
     font-weight: normal; }
   .adventures a {
