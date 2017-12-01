@@ -316,10 +316,12 @@ big {
 .site-footer {
   width: 100%;
   height: 350px;
-  background: url("/assets/project-04/images/dark-wood.png") repeat;
+  background: url("../../assets/project-04/images/dark-wood.png") repeat;
   padding-top: 3rem;
   color: white;
   line-height: 1.5; }
+  .site-footer img {
+    position: relative; }
   .site-footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -381,8 +383,8 @@ h1 {
   width: 100%;
   height: 100vh;
   padding-top: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("http://localhost:8888/inhabitentproject4/wp-content/uploads/2017/11/home-hero.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://localhost:8888/inhabitentproject4/wp-content/uploads/2017/11/home-hero.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../assets/project-04/images/home-hero.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/project-04/images/home-hero.jpg");
   background-size: cover;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -484,8 +486,8 @@ h1 {
   height: 100%;
   width: 50%;
   padding: 1.6rem 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("//localhost:3000/inhabitentproject4/wp-content/uploads/2017/11/canoe-girl.jpg") center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)), url("//localhost:3000/inhabitentproject4/wp-content/uploads/2017/11/canoe-girl.jpg") center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/project-04/images/adventure-photos/canoe-girl.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)), url("../../assets/project-04/images/adventure-photos/canoe-girl.jpg") center;
   background-size: cover, cover;
   border-right: solid 10px #fff;
   font-size: 2.8rem; }
@@ -510,8 +512,8 @@ h1 {
   height: 50%;
   width: 100%;
   padding: 1.6rem 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("//localhost:3000/inhabitentproject4/wp-content/uploads/2017/11/beach-bonfire.jpg") center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)), url("//localhost:3000/inhabitentproject4/wp-content/uploads/2017/11/beach-bonfire.jpg") center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/project-04/images/adventure-photos/beach-bonfire.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)), url("../../assets/project-04/images/adventure-photos/beach-bonfire.jpg") center;
   background-size: cover, cover;
   border-left: solid 10px #fff;
   border-bottom: solid 10px #fff;
@@ -524,8 +526,8 @@ h1 {
   height: 100%;
   width: 50%;
   padding: 1.6rem 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("//localhost:3000/inhabitentproject4/wp-content/uploads/2017/11/mountain-hikers.jpg") center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)), url("//localhost:3000/inhabitentproject4/wp-content/uploads/2017/11/mountain-hikers.jpg") center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/project-04/images/adventure-photos/mountain-hikers.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)), url("../../assets/project-04/images/adventure-photos/mountain-hikers.jpg") center;
   background-size: cover, cover;
   border-top: solid 10px #fff;
   border-left: solid 10px #fff;
@@ -536,8 +538,8 @@ h1 {
   height: 100%;
   width: 50%;
   padding: 1.6rem 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("//localhost:3000/inhabitentproject4/wp-content/uploads/2017/11/night-sky.jpg") center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)), url("//localhost:3000/inhabitentproject4/wp-content/uploads/2017/11/night-sky.jpg") center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/project-04/images/adventure-photos/night-sky.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.3)), url("../../assets/project-04/images/adventure-photos/night-sky.jpg") center;
   background-size: cover, cover;
   border-left: solid 10px #fff;
   border-top: solid 10px #fff;

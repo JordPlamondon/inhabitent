@@ -6,7 +6,6 @@
  */
 
 ?>
-
 			<!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
@@ -35,7 +34,7 @@
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<img src="<?php echo get_template_directory_uri() . '/assets/project-04/images/logos/inhabitent-logo-text.svg'; ?>" alt="Inhabitent Logo" />
 					</a>
-				</div>		
+				</div>	
 				<div class="site-info">
 				<p>Copyright &copy; <?php echo date("Y"); ?> Inhabitent</p>
 				</div><!-- .site-info -->
